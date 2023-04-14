@@ -1,16 +1,24 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { CalcComponent } from './calc/calc.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalcComponent,
+   
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
