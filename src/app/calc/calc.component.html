@@ -1,20 +1,32 @@
+
+<div class="text-light text-dark">
+<br><br>
+
 <h1>Calculadora De IMC </h1>
 
 <div class="text">
 
     <h3> Digite seu peso e sua altura</h3>
-
-    <label for="peso">Digite seu peso:</label>
+    <br>
+    <div class="display-6 text-dark">
+    <label  for="peso">Digite seu peso:</label>
+</div>
     <input type="number" [(ngModel)]="peso" placeholder="Seu peso">
     <br><br>
+<div class="display-6 text-dark" >
     <label for="altura">Digite a sua altura:</label>
+</div>
+  
     <input type="number" [(ngModel)]="altura" placeholder="Seu altura">
     <br><br>
-    <button class="btn btn-primary" (click)="calc()">Calcular</button>
+    <button class="btn btn-primary text-dark " (click)="calc()">Calcular</button>
     <br>
     {{imc}} 
     <br>
-    <div >
+    <div class="display-6 text-danger" >
     {{resu}}
     </div>
-</div>
+
+
+
+
