@@ -4,6 +4,7 @@ import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CalcComponent } from './calc/calc.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,8 @@ import { CalcComponent } from './calc/calc.component';
   imports: [
     BrowserModule,
     FormsModule,
+    NgbModule,
+    
     
   ],
   providers: [],
